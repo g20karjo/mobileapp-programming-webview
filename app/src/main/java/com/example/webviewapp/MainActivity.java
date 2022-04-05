@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -16,12 +17,13 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+private WebView my_webview;
+
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
-        WebView my_webview = new WebView(this);
+
         my_webview.loadUrl("https://www.facebook.com");
-        WebSettings webSettings = my_webview.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+
     }
 
     public void showInternalWebPage(){
@@ -34,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        my_webview = findViewById(R.id.my_webview);
 
+        WebViewClient clientWebView = new WebViewClient();
+        my_webview.setWebViewClient(clientWebView);
+        WebSettings webSettings = my_webview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
         /*
         * Rename your App. Tip: Values->Strings

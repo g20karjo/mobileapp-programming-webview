@@ -67,5 +67,5 @@ respektive funktion:
                 return true;
             }
 
-![intern websida](screenshot1.png)
-![extern websida](screenshot2.png)
+![intern websida](Screenshot1.png)
+![extern websida](Screenshot2.png)

@@ -67,6 +67,8 @@ respektive funktion:
                 return true;
             }
 
+![intern websida](mobileapp-programming-webview1/screenshot1.jpg)
+![extern websida](mobileapp-programming-webview1/screenshot2.jpg)
 
          /*
          * Rename your App. Tip: Values->Strings

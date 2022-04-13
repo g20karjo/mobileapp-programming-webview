@@ -67,5 +67,5 @@ respektive funktion:
                 return true;
             }
 
-![intern websida](mobileapp-programming-webview1/screenshot1.png)
-![extern websida](mobileapp-programming-webview1/screenshot2.png)
+![intern websida](screenshot1.png)
+![extern websida](screenshot2.png)
